@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="content">
+      <nav>
+        <div id="name">
+          <h1>
+            <span>Siatama Helomaono</span>
+            <img src="/assets/roller-paint.png" alt="paintbrush" class="brush"/>
+          </h1>
+        </div>
+        <ul>
+          <li><a href="#bio">About</a></li>
+          <li><a href="#artwork">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="anchor" id="artwork"></a>
+      <section aria-label="Portfolio" id="portfolio">
+        <div class="art-container">
+          <img src="/assets/abstract.webp" alt="" draggable="false"/>
+          <img src="/assets/car.webp" alt="" draggable="false" />
+          <img src="/assets/chess.webp" alt="" draggable="false" />
+          <img src="/assets/cybor.webp" alt="" draggable="false"/>
+          <img src="/assets/football.webp" alt="" draggable="false"/>
+          <img src="/assets/pencil car.webp" alt="" draggable="false"/>
+          <img src="/assets/rat.webp" alt="" draggable="false"/>
+          <img src="/assets/superhero.webp" alt="" draggable="false"/>
+          <img src="/assets/water.webp" alt="" draggable="false"/>
+        </div>
+      </section>
+      <button id="next">Click Me</button>
+
+      <a href="" id="bio"></a>
+      <section
+        class="about animate-on-scroll"
+        data-animate-classes="about-content"
+      >
+        <div class="about-content">
+          <h2></h2>
+          <div>
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+        <img
+          src=""
+          alt="Jeremy Sochan Headshot"
+          class="about-img"
+          draggable="false"
+        />
+      </section>
+      <a class="anchor" id="contact"></a>
+      <footer
+        class="animate-on-scroll"
+        data-animate-classes="contact-heading contact-form"
+      >
+        <h2 class="contact-heading">Get In Touch</h2>
+        <form class="contact-form">
+          <div>
+            <label for="name">Name</label
+            ><input type="text" name="name" id="name" required />
+          </div>
+          <div>
+            <label for="subject">Subject</label
+            ><input type="text" name="subject" id="subject" required />
+          </div>
+          <div>
+            <label for="message">Message</label
+            ><textarea
+              type="text"
+              name="message"
+              id="message"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </footer>
+    </div>
+
+    <div class="blur" aria-hidden="true"></div>
+    <div class="paint-loader" aria-hidden="true">
+      <div class="red paint"></div>
+      <div class="white paint"></div>
+      <div class="paint green"></div>
+    </div>
+  </body>
+</html>
